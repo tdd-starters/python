@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "template"
+name = "python_starter"
 version = "0.1.0"
 description = ""
 authors = []
@@ -22,6 +22,9 @@ pytest-mock = "^3.10.0"
 
 [tool.isort]
 profile = "black"
+
+[tool.poetry.scripts]
+calculate = "python_starter.calculator:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
