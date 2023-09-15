@@ -1,3 +1,4 @@
+"""String calculator."""
 import sys
 
 
@@ -6,6 +7,7 @@ def evaluate(expression: str) -> int:
     return 0
 
 
-def main():
-    input = " ".join(sys.argv[1:])
-    print(f"{input} = {evaluate(input)}")
+def main() -> None:
+    """Calculate the value of a mathematical expression."""
+    expression = " ".join(sys.argv[1:])
+    print(f"{expression} = {evaluate(input)}")

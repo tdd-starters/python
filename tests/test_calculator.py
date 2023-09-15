@@ -1,18 +1,17 @@
 import pytest
-
 from python_starter import evaluate
 
 
 @pytest.mark.parametrize(
-    "expression, expected",
-    (
+    ("expression", "expected"),
+    [
         ("0", 0),
         # ("1 + 2", 3),
         # ("1 + 2", 3),
         # ("(1 + 2) * 5 / 2 + -3 * 7", -14)
-    ),
+    ],
 )
-def test_expression(expression, expected):
+def test_expression(expression: str, expected: int):
     # When the expression is evaluated
     result = evaluate(expression)
 
